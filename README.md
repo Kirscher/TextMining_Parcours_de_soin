@@ -1,8 +1,17 @@
-# TextMining_Parcours_de_soin
+# Text Mining et parcours de soin
 
-#### Projet StatApp ENSAE 2023 - En partenariat avec l'AP-HP.
+## Projet StatApp ENSAE 2023
 
+### Quelles sont les causes de mortalité des patients insuffisants cardiaques ?
+
+**Encadrantes:** Dr. Anne-Isabelle Tropeano, Juliette Murris
+*INSERM*
+
+Il s'agit d'étudier les parcours de soins des patients à travers l'étude des motifs séquentiels, aussi appelé *sequential pattern mining.*
+Ainsi, à l'aide des codes GHM (Groupe Homogènes de Malade) caractérisant les hospitalisations, il est possible de trouver des similarités dans les parcours de soins.
+
+
+#### *Diagramme de relation entre entités des différentes bases de données*
 
 ![ERD drawio](https://user-images.githubusercontent.com/85068746/207057273-9d1e2ede-e80b-483c-b9ac-712f55697233.png)
 
-*Diagramme de relation entre entités des différentes bases*
