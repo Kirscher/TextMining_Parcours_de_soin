@@ -9,7 +9,7 @@
 **Encadrantes:** Dr. Anne-Isabelle Tropeano, Juliette Murris
 
 
-Il s'agit d'étudier les parcours de soins des patients à travers l'étude des motifs séquentiels, aussi appelé *sequential pattern mining.*
+Il s'agit d'étudier les parcours de soins des patients insuffisants cardiaques à travers l'étude des motifs séquentiels, aussi appelé *sequential pattern mining.*
 Ainsi, à l'aide des codes GHM (Groupe Homogènes de Malade) caractérisant les hospitalisations, il est possible de trouver des similarités dans les parcours de soins.
 
 
