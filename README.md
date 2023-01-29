@@ -17,3 +17,4 @@ Ainsi, à l'aide des codes GHM (Groupe Homogènes de Malade) caractérisant les 
 
 ![ERD drawio](https://user-images.githubusercontent.com/85068746/207057273-9d1e2ede-e80b-483c-b9ac-712f55697233.png)
 
+![image](https://user-images.githubusercontent.com/85068746/215323235-b32799b9-c2b8-408c-9890-2a071c64f412.png)
