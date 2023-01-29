@@ -16,6 +16,6 @@ Ainsi, à l'aide des codes GHM (Groupe Homogènes de Malade) caractérisant les 
 
 #### *Diagramme de relation entre entités des différentes bases de données*
 
-![ERD drawio](https://user-images.githubusercontent.com/85068746/207057273-9d1e2ede-e80b-483c-b9ac-712f55697233.png)
+![erd](erd.png)
 
 
