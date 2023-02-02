@@ -19,4 +19,4 @@ Ainsi, à l'aide des codes GHM (Groupe Homogènes de Malade) caractérisant les 
 
 #### *Diagramme des contextes patient divisant la population en 18 clusters hétérogènes*
 
-![diagram](diagramme_contextes_patient.png)
+<img src="diagramme_contextes_patient.png"  width="80%">
