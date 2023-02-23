@@ -16,7 +16,3 @@ Ainsi, à l'aide des codes GHM (Groupe Homogènes de Malade) caractérisant les 
 #### *Diagramme de relation entre entités des différentes bases de données*
 
 ![erd](database_erd.png)
-
-#### *Diagramme des contextes patient divisant la population en 18 clusters hétérogènes*
-
-<img src="diagramme_contextes_patient.png"  width="80%">
