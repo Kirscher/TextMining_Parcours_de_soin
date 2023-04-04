@@ -1,0 +1,70 @@
+<html>
+<body>
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<div id="sankey_multiple" style="width: 900px; height: 300px;"></div>
+
+<script type="text/javascript">
+  google.charts.load("current", {packages:["sankey"]});
+  google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'From');
+    data.addColumn('string', 'To');
+    data.addColumn('number', 'Weight');
+    data.addRows([
+    ['05M091' ,'nan ', 0.024 ],
+    ['05M092' ,'nan ', 0.066 ],
+['05M093' ,'nan ', 0.057 ],
+['05M094' ,'nan ', 0.014 ],
+['05M092' ,'05M092 ', 0.027 ],
+['05M09T' ,'nan ', 0.024 ],
+['05M092' ,'05M093 ', 0.014 ],
+['05M093' ,'05M092 ', 0.014 ],
+['05M091' ,'05K101 ', 0.013 ],
+['05M093' ,'05M093 ', 0.013 ],
+['05M091' ,'05M092 ', 0.012 ],
+['05M092' ,'05M091 ', 0.01 ],
+['05M09T' ,'05M092 ', 0.01 ],
+['05M091' ,'05M091 ', 0.009 ],
+['05M092' ,'05K101 ', 0.009 ],
+['05M09T' ,'05M093 ', 0.006 ],
+['05M092' ,'05M09T ', 0.006 ],
+['05M092' ,'02C05J ', 0.006 ],
+['05M093' ,'05K101 ', 0.006 ],
+['05M09T' ,'05M091 ', 0.006 ],
+
+['nan ' ,' nan ', 0.186 ],
+['05M092 ' ,' nan ', 0.011 ],
+['05M092 ' ,' 05M092 ', 0.01 ],
+['05M093 ' ,' nan ', 0.009 ],
+['02C05J ' ,' nan ', 0.007 ],
+['05K101 ' ,' nan ', 0.006 ],
+['05M091 ' ,' nan ', 0.005 ],
+['05M092 ' ,' 05M093 ', 0.005 ],
+['02C05J ' ,' nan ', 0.004 ],
+//['04M053 ' ,' nan ', 0.004 ],
+['05M093 ' ,' 05M092 ', 0.004 ],
+['05M091 ' ,' 05M092 ', 0.003 ],
+['05M09T ' ,' 05M092 ', 0.003 ],
+['05M09T ' ,' nan ', 0.003 ],
+['05M091 ' ,' 05M091 ', 0.003 ],
+['05M092 ' ,' 05M091 ', 0.003 ],
+['05M093 ' ,' 05M093 ', 0.002 ],
+//['04M132 ' ,' nan ', 0.002 ],
+//['05M094 ' ,' nan ', 0.002 ],
+//['23M20Z ' ,' nan ', 0.002 ],
+    ]);
+
+    // Set chart options
+    var options = {
+      width: 600,
+    };
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+    chart.draw(data, options);
+   }
+</script>
+</body>
+</html>
