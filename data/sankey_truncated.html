@@ -1,0 +1,51 @@
+<html>
+<body>
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<div id="sankey_multiple" style="width: 900px; height: 300px;"></div>
+
+<script type="text/javascript">
+  google.charts.load("current", {packages:["sankey"]});
+  google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'From');
+    data.addColumn('string', 'To');
+    data.addColumn('number', 'Proportion');
+    data.addRows([
+
+['05M09' ,'05M09 ', 0.164 ],
+['05M09' ,'Décès ', 0.16 ],
+['05M09' ,'05K10 ', 0.042 ],
+['05M09' ,'nan ', 0.032 ],
+['05M09' ,'05M08 ', 0.024 ],
+['05M09' ,'04M05 ', 0.022 ],
+['05M09' ,'23M20 ', 0.018 ],
+['05M09' ,'04M13 ', 0.016 ],
+['05M09' ,'02C05 ', 0.016 ],
+['05M09' ,'16M11 ', 0.014 ],
+
+['Décès ' ,' nan ', 0.16 ],
+['05M09 ' ,' 05M09 ', 0.045 ],
+['nan ' ,' nan ', 0.032 ],
+['05M09 ' ,' Décès ', 0.027 ],
+['05M09 ' ,' nan ', 0.006 ],
+['05K10 ' ,' 05M09 ', 0.006 ],
+['02C05 ' ,' nan ', 0.004 ],
+['04M05 ' ,' Décès ', 0.004 ],
+['05M09 ' ,' 05K10 ', 0.004 ],
+
+    ]);
+
+    // Set chart options
+    var options = {
+      width: 600,
+    };
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+    chart.draw(data, options);
+   }
+</script>
+</body>
+</html>
