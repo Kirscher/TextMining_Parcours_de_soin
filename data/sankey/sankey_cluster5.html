@@ -1,0 +1,68 @@
+<html>
+<body>
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<div id="sankey_multiple" style="width: 900px; height: 300px;"></div>
+
+<script type="text/javascript">
+  google.charts.load("current", {packages:["sankey"]});
+  google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'From');
+    data.addColumn('string', 'To');
+    data.addColumn('number', 'Nd de patients');
+	data.addColumn('number', 'Proportion');
+    data.addRows([
+    ['05M09' ,'05M09 ', 28 , 0.217 ],
+<!-- ['05M09' ,'23M20 ', 7 , 0.054 ], -->
+['05M09' ,'Décès ', 6 , 0.047 ],
+<!-- ['05M09' ,'05K06 ', 5 , 0.039 ], -->
+<!-- ['05M09' ,'05K10 ', 5 , 0.039 ], -->
+<!-- ['05M09' ,'05M12 ', 4 , 0.031 ], -->
+<!-- ['05M09' ,'05M20 ', 4 , 0.031 ], -->
+<!-- ['05M09' ,'04M05 ', 2 , 0.016 ], -->
+<!-- ['05M09' ,'04M13 ', 2 , 0.016 ], -->
+<!-- ['05M09' ,'04M14 ', 2 , 0.016 ], -->
+<!-- ['05M09' ,'06M04 ', 2 , 0.016 ], -->
+<!-- ['05M09' ,'08M35 ', 2 , 0.016 ], -->
+<!-- ['05M09' ,'09M05 ', 2 , 0.016 ], -->
+<!-- ['05M09' ,'11M06 ', 2 , 0.016 ], -->
+<!-- ['05M09' ,'11M19 ', 2 , 0.016 ], -->
+<!-- ['05M09' ,'23K02 ', 2 , 0.016 ], -->
+<!-- ['05M09' ,'23M06 ', 2 , 0.016 ], -->
+<!-- ['05M09' ,'23M10 ', 2 , 0.016 ], -->
+<!-- ['05M09' ,'11C02 ', 1 , 0.008 ], -->
+<!-- ['05M09' ,'19M06 ', 1 , 0.008 ], -->
+
+
+['05M09 ' ,' 05M09 ', 9 , 0.07 ],
+['Décès ' ,' nan ', 6 , 0.047 ],
+['05M09 ' ,' Décès ', 4 , 0.031 ],
+['05M09 ' ,' 04M20 ', 2 , 0.016 ],
+['05M09 ' ,' 05M08 ', 2 , 0.016 ],
+['05M09 ' ,' 16M11 ', 2 , 0.016 ],
+<!-- ['23M20 ' ,' 05M17 ', 2 , 0.016 ], -->
+<!-- ['05M09 ' ,' 01M20 ', 1 , 0.008 ], -->
+<!-- ['05M09 ' ,' 01M30 ', 1 , 0.008 ], -->
+<!-- ['05M09 ' ,' 05C19 ', 1 , 0.008 ], -->
+<!-- ['05M09 ' ,' 05M05 ', 1 , 0.008 ], -->
+<!-- ['05M09 ' ,' 05M06 ', 1 , 0.008 ], -->
+<!-- ['05M09 ' ,' 05M13 ', 1 , 0.008 ], -->
+<!-- ['05M09 ' ,' 05M17 ', 1 , 0.008 ], -->
+<!-- ['05M09 ' ,' 10M13 ', 1 , 0.008 ], -->
+<!-- ['05M09 ' ,' 19M11 ', 1 , 0.008 ], -->
+    ]);
+
+    // Set chart options
+    var options = {
+      width: 600,
+    };
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+    chart.draw(data, options);
+   }
+</script>
+</body>
+</html>

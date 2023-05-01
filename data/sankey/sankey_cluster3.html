@@ -1,0 +1,48 @@
+<html>
+<body>
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<div id="sankey_multiple" style="width: 900px; height: 300px;"></div>
+
+<script type="text/javascript">
+  google.charts.load("current", {packages:["sankey"]});
+  google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'From');
+    data.addColumn('string', 'To');
+    data.addColumn('number', 'Nd de patients');
+	data.addColumn('number', 'Proportion');
+    data.addRows([
+    ['05M09' ,'05M09 ', 3 , 0.333 ],
+['05M09' ,'05K13 ', 1 , 0.111 ],
+['05M09' ,'07M04 ', 1 , 0.111 ],
+['05M09' ,'10M13 ', 1 , 0.111 ],
+['05M09' ,'20Z05 ', 1 , 0.111 ],
+['05M09' ,'21M16 ', 1 , 0.111 ],
+['05M09' ,'Décès ', 1 , 0.111 ],
+
+
+['05K13 ' ,' 08M31 ', 1 , 0.111 ],
+['05M09 ' ,' 01M34 ', 1 , 0.111 ],
+['05M09 ' ,' 05M09 ', 1 , 0.111 ],
+['05M09 ' ,' 10M09 ', 1 , 0.111 ],
+['07M04 ' ,' 07M04 ', 1 , 0.111 ],
+['10M13 ' ,' 05M09 ', 1 , 0.111 ],
+['20Z05 ' ,' 20Z05 ', 1 , 0.111 ],
+['21M16 ' ,' 11M18 ', 1 , 0.111 ],
+['Décès ' ,' nan ', 1 , 0.111 ],
+    ]);
+
+    // Set chart options
+    var options = {
+      width: 600,
+    };
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+    chart.draw(data, options);
+   }
+</script>
+</body>
+</html>

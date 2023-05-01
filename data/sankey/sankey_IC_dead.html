@@ -1,0 +1,58 @@
+<html>
+<body>
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<div id="sankey_multiple" style="width: 900px; height: 300px;"></div>
+
+<script type="text/javascript">
+  google.charts.load("current", {packages:["sankey"]});
+  google.charts.setOnLoadCallback(drawChart);
+   function drawChart() {
+    var data = new google.visualization.DataTable();
+    data.addColumn('string', 'From');
+    data.addColumn('string', 'To');
+    data.addColumn('number', 'Proportion');
+    data.addRows([
+
+['05M09' ,'Décès ', 0.225 ],
+['05M09' ,'05M09 ', 0.178 ],
+['05M09' ,'05K10 ', 0.026 ],
+['05M09' ,'04M05 ', 0.024 ],
+
+<!-- ['05M09' ,'05M08 ', 0.02 ], -->
+['05M09' ,'04M13 ', 0.019 ],
+<!-- ['05M09' ,'23M20 ', 0.015 ], -->
+<!-- ['05M09' ,'16M11 ', 0.015 ], -->
+<!-- ['05M09' ,'04M20 ', 0.014 ], -->
+
+
+['Décès ' ,' nan ', 0.225 ],
+['05M09 ' ,' 05M09 ', 0.053 ],
+['05M09 ' ,' Décès ', 0.038 ],
+<!-- ['23Z02 ' ,' Décès ', 0.008 ], -->
+['04M05 ' ,' Décès ', 0.006 ],
+['04M13 ' ,' Décès ', 0.005 ],
+['05K10 ' ,' 05M09 ', 0.005 ],
+<!-- ['01M30 ' ,' Décès ', 0.005 ], -->
+<!-- ['05M22 ' ,' Décès ', 0.005 ], -->
+<!-- ['04M24 ' ,' Décès ', 0.005 ], -->
+
+
+[' nan ' ,' nan  ', 0.225 ],
+[' Décès ' ,' nan  ', 0.159 ],
+[' 05M09 ' ,' 05M09  ', 0.038 ],
+[' 05M09 ' ,' Décès  ', 0.028 ],
+    ]);
+
+    // Set chart options
+    var options = {
+      width: 600,
+    };
+
+    // Instantiate and draw our chart, passing in some options.
+    var chart = new google.visualization.Sankey(document.getElementById('sankey_multiple'));
+    chart.draw(data, options);
+   }
+</script>
+</body>
+</html>
