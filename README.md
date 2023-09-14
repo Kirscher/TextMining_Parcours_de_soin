@@ -1,18 +1,23 @@
-# Text Mining et parcours de soin
+# Text Mining and Healthcare Pathways
 
-## Projet StatApp - ENSAE 2023
+### StatApp - ENSAE 2023
 
-### Quelles sont les causes de mortalité des patients insuffisants cardiaques ?
+**Authors:** T. Amadei, T. Kirscher, A. Klein \
+**Supervisors:** Dr. A.-I. Tropeano, J. Murris \
+_AP-HP_ & _INSERM_
 
-**Encadrantes:** Dr. Anne-Isabelle Tropeano, Juliette Murris
+This repository contains the code for our research project:
 
-*AP-HP & INSERM*
+### What are the causes of mortality in heart failure patients?
 
-Il s'agit d'étudier les parcours de soins des patients insuffisants cardiaques à travers l'étude des motifs séquentiels, aussi appelé *sequential pattern mining.*
-Ainsi, à l'aide des codes GHM (Groupe Homogènes de Malade) caractérisant les hospitalisations, il est possible de trouver des similarités dans les parcours de soins.
+The aim is to study the care pathways of heart failure patients through NLP and sequential pattern mining, then implement a survival analysis model.
 
-![image](https://user-images.githubusercontent.com/85068746/215323235-b32799b9-c2b8-408c-9890-2a071c64f412.png)
+The content is the following :
+- Exploratory data analysis
+- Patients clustering
+- Healthcare pathway analysis
+- Survival analysis
 
-#### *Diagramme de relation entre entités des différentes bases de données*
+### Data Entity Relationship Diagram
 
 ![erd](database_erd.png)
