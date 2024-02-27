@@ -20,4 +20,4 @@ The content is the following :
 
 ### Data Entity Relationship Diagram
 
-![erd](database_erd.png)
+![erd](/src/database_erd.png)
