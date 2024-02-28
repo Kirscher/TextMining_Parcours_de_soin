@@ -1,14 +1,12 @@
 # Text Mining and Healthcare Pathways
 
-### StatApp - ENSAE 2023
-
 **Authors:** T. Amadei, T. Kirscher, A. Klein \
 **Supervisors:** Dr. A.-I. Tropeano, J. Murris \
-_AP-HP_ & _INSERM_
+_AP-HP_ / _INRIA_ & _INSERM_
 
 This repository contains the code for our research project:
 
-### What are the causes of mortality in heart failure patients?
+### A Novel Methodological Framework for Analyzing Health Trajectories and Survival Outcomes in Heart Failure Patients
 
 The aim is to study the care pathways of heart failure patients through NLP and sequential pattern mining, then implement a survival analysis model.
 
